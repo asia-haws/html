@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div style="background-color: #670541; padding: 10px;">
+    <table style="width: 100%; vertical-align: middle;">
+      <tr>
+        <td style="width: 150px;">
+          <img src="assets/logo.jpg" alt="Asia's Cafe Logo" width="120" height="96" style="display: block; border-radius: 8px 8px 8px 8px;">
+        </td>
+        <td style="text-align: left; font-weight: bold;">
+          <a href="index.html" style="text-decoration: none; color: white; margin: 0 10px; font-size: 20px;">Home</a>
+          <a href="drinks.html" style="text-decoration: none; color: white; margin: 0 10px; font-size: 20px">Drinks</a>
+          <a href="bakery.html" style="text-decoration: none; color: white; margin: 0 10px; font-size: 20px">Bakery</a>
+          <a href="reservation.html" style="text-decoration: none; color: white; margin: 0 10px; font-size: 20px">Reservations</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <h2>Asia's Cafe Reservations</h2>
+  <header>Asia's Cafe Reservation Form</header>
+  <form action="https://httpbin.org/post" method="POST">
+    <div class="first-last">
+      <label for="first">First Name:</label>
+      <input id="first" type="text" placeholder="Please enter your first name" name="first_name" required/>
+      <label for="last">Last Name:</label>
+      <input id="last" type="text" placeholder="Please enter your last name" name="last_name" required/>
+    </div>
+    <div class="email-field">
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="Please enter your email" name="email" required/>
+    </div>
+    <div class="phone-number">
+      <label for="phone">Phone:</label>
+      <input id="phone" type="tel" placeholder="Please enter your phone" name="phone"/>
+    </div>
+    <div class="reservation-date-input">
+      <label for="reservation-start">Reservation Start Date</label>
+      <input id="reservation-start" type="date" name="reservation-start"/>
+      <label for="reservation-end">Reservation End Date</label>
+      <input id="reservation-end" type="date" name="reservation-end"/>
+    </div>
+    <div class="packages-field">
+      <h3>Packages and Accomodations</h3>
+    <input id="basic-package" type="radio" name="package" value="basicPackage">
+    <label for="basic-package">Basic Package</label>
+    <input id="premium-package" type="radio" name="package" value="premiumPackage">
+    <label for="premium-package">Premium Package</label>
+    </div>
+    <div class="accomodations-field">
+      <input id="longer-res" type="checkbox" name="accomodation" value="longerReservation">
+      <label for="longer-res">Longer Reservation</label>
+      <input id="private-room" type="checkbox" name="accomodation" value="privateRoom">
+      <label for="private-room">Private Dining Room</label>
+      <input id="dairy-free" type="checkbox" name="accomodation" value="dairyFree">
+      <label for="dairy-free">Dairy Free Options</label>
+    </div>
+    <div class="pastry-selection-field">
+      <h3>Pastries</h3>
+      <select name="pastry-select" id="pastry-course">
+        <option value="">Select a pastry option</option>
+        <option value="crossiant">Crossiant</option>
+        <option value="shortcake">Shortcake</option>
+        <option value="donut">Donut</option>
+        <option value="eclair">Eclair</option>
+      </select>
+    </div>
+    <div class="allergy-notes-field">
+      <h3>Allergy Notes</h3>
+      <label for="allergy-notes">Please provide any allergies you and your guests have.</label>
+      <br>
+      <br>
+      <br>
+      <textarea name="allergies" id="allergy-notes" placeholder="Enter allergy notes here..." rows="20" cols="40"></textarea>
+    </div>
+    <div class="submit-button">
+      <input type="submit" value="Book my reservation"/> 
+    </div>
+  </form>
+</body>
+
+<footer style="background-color: #670541; color: white; padding: 25px 10px; text-align: center; border-top: 4px solid #fabce9; font-family: 'Roboto', sans-serif;">
+  <p style="margin: 5px 0; font-size: 16px;">
+    <i class="fa-solid fa-phone"></i> 
+    <a href="tel:4357818181" style="color: white; text-decoration: none;">435-781-8181</a>
+  </p>
+  <p style="margin: 5px 0; font-size: 16px;">
+    <i class="fa-solid fa-location-dot"></i> 1920 West 124 North, Orem, UT, 84058
+  </p>
+  <div style="margin: 10px 0; font-size: 24px;">
+    <i class="fa-brands fa-square-instagram" style="margin: 0 10px; "></i>
+    <i class="fa-brands fa-facebook" style="margin: 0 10px; "></i>
+  </div>
+  <div style="margin: 15px 0;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.200278519446!2d-111.40326922369401!3d45.28417447107147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53500d6b80503dcb%3A0x769ce4aba0540313!2sCafe%20%26%20Bakery!5e0!3m2!1sen!2sus!4v1757457524512!5m2!1sen!2sus" 
+      width="400" height="250" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <p style="margin-top: 15px; font-size: 14px;">2025 © Asia Haws</p>
+</footer>
+</html>
